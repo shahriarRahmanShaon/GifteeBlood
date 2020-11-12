@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		009429AE255D2965006F313A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009429AD255D2965006F313A /* LoginView.swift */; };
 		00AB1138255723AF00FC48BF /* GifteeBloodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB1137255723AF00FC48BF /* GifteeBloodApp.swift */; };
 		00AB113A255723AF00FC48BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB1139255723AF00FC48BF /* ContentView.swift */; };
 		00AB113C255723B200FC48BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00AB113B255723B200FC48BF /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		009429AD255D2965006F313A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		00AB1134255723AF00FC48BF /* GifteeBlood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifteeBlood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00AB1137255723AF00FC48BF /* GifteeBloodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeBloodApp.swift; sourceTree = "<group>"; };
 		00AB1139255723AF00FC48BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				00AB1137255723AF00FC48BF /* GifteeBloodApp.swift */,
+				009429AD255D2965006F313A /* LoginView.swift */,
 				00AB1139255723AF00FC48BF /* ContentView.swift */,
 				00DBBCD5255B9E1B0041963D /* LaunchScreenAnimation.swift */,
 				00AB113B255723B200FC48BF /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 			files = (
 				00AB113A255723AF00FC48BF /* ContentView.swift in Sources */,
 				00DBBCD6255B9E1B0041963D /* LaunchScreenAnimation.swift in Sources */,
+				009429AE255D2965006F313A /* LoginView.swift in Sources */,
 				00AB1138255723AF00FC48BF /* GifteeBloodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
