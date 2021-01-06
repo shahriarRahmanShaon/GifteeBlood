@@ -1,0 +1,6 @@
+framework module Pods_GifteeBloodTests {
+  umbrella header "Pods-GifteeBloodTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

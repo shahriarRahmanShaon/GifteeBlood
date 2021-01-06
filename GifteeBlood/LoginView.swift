@@ -6,33 +6,26 @@
 //
 
 import SwiftUI
+import IQKeyboardManagerSwift
 struct LoginView: View {
     @State var email = ""
     @State var pass = ""
     var body: some View {
         VStack{
-            HStack(alignment: .top, spacing: 0) {
-                Image("loginView").resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 200, height: 200)
-                    .offset(x: 1, y: 1)
-                Image("LoginImage").resizable().aspectRatio(contentMode: .fit)
-            }
-            HStack {
-                Text("Giftee Blood !")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color(.black))
-                Spacer()
-            }.padding()
+            Text("Giftee Blood !")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .foregroundColor(Color(.black))
+            Spacer()
+                .frame(height : 50)
             VStack(alignment: .leading) {
                 Text("Username")
-                    .padding(.top ,20)
+//                    .padding(.top ,20)
                 VStack {
                     TextField("", text:self.$email)
                     Rectangle()
                         .fill(self.email == "" ? Color.black: Color.red.opacity (0.07) )
-                        .frame(height: 3)
+                        .frame(height: 2)
                 }
                 Text("Password")
                     .padding(.top ,20)
@@ -40,7 +33,7 @@ struct LoginView: View {
                     TextField("", text:self.$pass)
                     Rectangle()
                         .fill(self.pass == "" ? Color.black: Color.red.opacity (0.07) )
-                        .frame(height: 3)
+                        .frame(height: 2)
                 }
             }
             .padding(.horizontal)
@@ -61,10 +54,9 @@ struct LoginView: View {
                     .padding(.horizontal, 40)
                     .frame(minWidth: 0, maxWidth: 330)
                     .background(Color("SignInButton"))
-                    
+                
                 
             }.cornerRadius(10)
-            Spacer()
             HStack{
                 Rectangle()
                     .frame(width: 80, height: 5)
@@ -109,7 +101,7 @@ struct SocialMediaButton: View {
                 
                 .stroke(Color.black)
                 .frame(width: 150, height: 50)
-                
+            
             Image("\(imageName)")
                 .resizable()
                 .frame(width: 80, height: 40)

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,13 @@
 		00AB114A255723B200FC48BF /* GifteeBloodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB1149255723B200FC48BF /* GifteeBloodTests.swift */; };
 		00AB1155255723B200FC48BF /* GifteeBloodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB1154255723B200FC48BF /* GifteeBloodUITests.swift */; };
 		00DBBCD6255B9E1B0041963D /* LaunchScreenAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DBBCD5255B9E1B0041963D /* LaunchScreenAnimation.swift */; };
+		00F3625C25A61B7F00F0C0B2 /* lottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3625B25A61B7F00F0C0B2 /* lottieView.swift */; };
+		00F3626125A61BED00F0C0B2 /* pressure-pulse.json in Resources */ = {isa = PBXBuildFile; fileRef = 00F3626025A61BED00F0C0B2 /* pressure-pulse.json */; };
+		00F3626A25A61D3600F0C0B2 /* animationModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3626925A61D3600F0C0B2 /* animationModelView.swift */; };
+		00F5EBC625A3866E00720549 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F5EBC525A3866E00720549 /* HomeView.swift */; };
+		39A8E78EDC91CB6D08BE1FB1 /* Pods_GifteeBloodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9B202F97B22FA811AAC8CB /* Pods_GifteeBloodTests.framework */; };
+		84929AAF5C84310E62606CFC /* Pods_GifteeBlood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1801AC5F332ED153E06543D /* Pods_GifteeBlood.framework */; };
+		B04CCD88F829AF58A3E3B5DE /* Pods_GifteeBlood_GifteeBloodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A57EAFDEC98883A2D58848 /* Pods_GifteeBlood_GifteeBloodUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,19 @@
 		00AB1154255723B200FC48BF /* GifteeBloodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeBloodUITests.swift; sourceTree = "<group>"; };
 		00AB1156255723B200FC48BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00DBBCD5255B9E1B0041963D /* LaunchScreenAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenAnimation.swift; sourceTree = "<group>"; };
+		00F3625B25A61B7F00F0C0B2 /* lottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottieView.swift; sourceTree = "<group>"; };
+		00F3626025A61BED00F0C0B2 /* pressure-pulse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pressure-pulse.json"; sourceTree = "<group>"; };
+		00F3626925A61D3600F0C0B2 /* animationModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animationModelView.swift; sourceTree = "<group>"; };
+		00F5EBC525A3866E00720549 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1A22018C3AE8D7282062D3FE /* Pods-GifteeBloodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifteeBloodTests.debug.xcconfig"; path = "Target Support Files/Pods-GifteeBloodTests/Pods-GifteeBloodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2742854ABA195C8B7622A942 /* Pods-GifteeBloodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifteeBloodTests.release.xcconfig"; path = "Target Support Files/Pods-GifteeBloodTests/Pods-GifteeBloodTests.release.xcconfig"; sourceTree = "<group>"; };
+		67D991C40076A515F25FC5A3 /* Pods-GifteeBlood-GifteeBloodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifteeBlood-GifteeBloodUITests.release.xcconfig"; path = "Target Support Files/Pods-GifteeBlood-GifteeBloodUITests/Pods-GifteeBlood-GifteeBloodUITests.release.xcconfig"; sourceTree = "<group>"; };
+		79A57EAFDEC98883A2D58848 /* Pods_GifteeBlood_GifteeBloodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifteeBlood_GifteeBloodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79F3CC2162556749286FC339 /* Pods-GifteeBlood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifteeBlood.release.xcconfig"; path = "Target Support Files/Pods-GifteeBlood/Pods-GifteeBlood.release.xcconfig"; sourceTree = "<group>"; };
+		AA96E80C0A7EEC185A9A0D27 /* Pods-GifteeBlood-GifteeBloodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifteeBlood-GifteeBloodUITests.debug.xcconfig"; path = "Target Support Files/Pods-GifteeBlood-GifteeBloodUITests/Pods-GifteeBlood-GifteeBloodUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE580E070EF63A44E8858708 /* Pods-GifteeBlood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifteeBlood.debug.xcconfig"; path = "Target Support Files/Pods-GifteeBlood/Pods-GifteeBlood.debug.xcconfig"; sourceTree = "<group>"; };
+		C1801AC5F332ED153E06543D /* Pods_GifteeBlood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifteeBlood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9B202F97B22FA811AAC8CB /* Pods_GifteeBloodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifteeBloodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84929AAF5C84310E62606CFC /* Pods_GifteeBlood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A8E78EDC91CB6D08BE1FB1 /* Pods_GifteeBloodTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04CCD88F829AF58A3E3B5DE /* Pods_GifteeBlood_GifteeBloodUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +106,8 @@
 				00AB1148255723B200FC48BF /* GifteeBloodTests */,
 				00AB1153255723B200FC48BF /* GifteeBloodUITests */,
 				00AB1135255723AF00FC48BF /* Products */,
+				0B54869687E0E50FCCF84E06 /* Pods */,
+				6B1ECEB6D9B5DDBDE41B5B88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,10 +127,12 @@
 				00AB1137255723AF00FC48BF /* GifteeBloodApp.swift */,
 				009429AD255D2965006F313A /* LoginView.swift */,
 				00AB1139255723AF00FC48BF /* ContentView.swift */,
-				00DBBCD5255B9E1B0041963D /* LaunchScreenAnimation.swift */,
+				00BAD70C25A60BAA007AAA81 /* Animations */,
 				00AB113B255723B200FC48BF /* Assets.xcassets */,
+				00F3626525A61C0200F0C0B2 /* Assets */,
 				00AB1140255723B200FC48BF /* Info.plist */,
 				00AB113D255723B200FC48BF /* Preview Content */,
+				00F5EBC525A3866E00720549 /* HomeView.swift */,
 			);
 			path = GifteeBlood;
 			sourceTree = "<group>";
@@ -136,6 +163,47 @@
 			path = GifteeBloodUITests;
 			sourceTree = "<group>";
 		};
+		00BAD70C25A60BAA007AAA81 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				00DBBCD5255B9E1B0041963D /* LaunchScreenAnimation.swift */,
+				00F3625B25A61B7F00F0C0B2 /* lottieView.swift */,
+				00F3626925A61D3600F0C0B2 /* animationModelView.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		00F3626525A61C0200F0C0B2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				00F3626025A61BED00F0C0B2 /* pressure-pulse.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0B54869687E0E50FCCF84E06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE580E070EF63A44E8858708 /* Pods-GifteeBlood.debug.xcconfig */,
+				79F3CC2162556749286FC339 /* Pods-GifteeBlood.release.xcconfig */,
+				AA96E80C0A7EEC185A9A0D27 /* Pods-GifteeBlood-GifteeBloodUITests.debug.xcconfig */,
+				67D991C40076A515F25FC5A3 /* Pods-GifteeBlood-GifteeBloodUITests.release.xcconfig */,
+				1A22018C3AE8D7282062D3FE /* Pods-GifteeBloodTests.debug.xcconfig */,
+				2742854ABA195C8B7622A942 /* Pods-GifteeBloodTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6B1ECEB6D9B5DDBDE41B5B88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1801AC5F332ED153E06543D /* Pods_GifteeBlood.framework */,
+				79A57EAFDEC98883A2D58848 /* Pods_GifteeBlood_GifteeBloodUITests.framework */,
+				EA9B202F97B22FA811AAC8CB /* Pods_GifteeBloodTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00AB1159255723B200FC48BF /* Build configuration list for PBXNativeTarget "GifteeBlood" */;
 			buildPhases = (
+				962396270A4F68CD451F0175 /* [CP] Check Pods Manifest.lock */,
 				00AB1130255723AF00FC48BF /* Sources */,
 				00AB1131255723AF00FC48BF /* Frameworks */,
 				00AB1132255723AF00FC48BF /* Resources */,
+				FA413D2373715E34AE1DFFB0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00AB115C255723B200FC48BF /* Build configuration list for PBXNativeTarget "GifteeBloodTests" */;
 			buildPhases = (
+				83563E5826C1E33150EACECF /* [CP] Check Pods Manifest.lock */,
 				00AB1141255723B200FC48BF /* Sources */,
 				00AB1142255723B200FC48BF /* Frameworks */,
 				00AB1143255723B200FC48BF /* Resources */,
@@ -178,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00AB115F255723B200FC48BF /* Build configuration list for PBXNativeTarget "GifteeBloodUITests" */;
 			buildPhases = (
+				239C05420D45D9F95FBEBB1B /* [CP] Check Pods Manifest.lock */,
 				00AB114C255723B200FC48BF /* Sources */,
 				00AB114D255723B200FC48BF /* Frameworks */,
 				00AB114E255723B200FC48BF /* Resources */,
+				53B22209C7874CD4921A10CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +314,7 @@
 			files = (
 				00AB113F255723B200FC48BF /* Preview Assets.xcassets in Resources */,
 				00AB113C255723B200FC48BF /* Assets.xcassets in Resources */,
+				00F3626125A61BED00F0C0B2 /* pressure-pulse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +334,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		239C05420D45D9F95FBEBB1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GifteeBlood-GifteeBloodUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53B22209C7874CD4921A10CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifteeBlood-GifteeBloodUITests/Pods-GifteeBlood-GifteeBloodUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifteeBlood-GifteeBloodUITests/Pods-GifteeBlood-GifteeBloodUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GifteeBlood-GifteeBloodUITests/Pods-GifteeBlood-GifteeBloodUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83563E5826C1E33150EACECF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GifteeBloodTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		962396270A4F68CD451F0175 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GifteeBlood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA413D2373715E34AE1DFFB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifteeBlood/Pods-GifteeBlood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifteeBlood/Pods-GifteeBlood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GifteeBlood/Pods-GifteeBlood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		00AB1130255723AF00FC48BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				00AB113A255723AF00FC48BF /* ContentView.swift in Sources */,
+				00F3626A25A61D3600F0C0B2 /* animationModelView.swift in Sources */,
 				00DBBCD6255B9E1B0041963D /* LaunchScreenAnimation.swift in Sources */,
 				009429AE255D2965006F313A /* LoginView.swift in Sources */,
+				00F3625C25A61B7F00F0C0B2 /* lottieView.swift in Sources */,
+				00F5EBC625A3866E00720549 /* HomeView.swift in Sources */,
 				00AB1138255723AF00FC48BF /* GifteeBloodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +602,7 @@
 		};
 		00AB115A255723B200FC48BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE580E070EF63A44E8858708 /* Pods-GifteeBlood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,6 +625,7 @@
 		};
 		00AB115B255723B200FC48BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F3CC2162556749286FC339 /* Pods-GifteeBlood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,6 +648,7 @@
 		};
 		00AB115D255723B200FC48BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A22018C3AE8D7282062D3FE /* Pods-GifteeBloodTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +671,7 @@
 		};
 		00AB115E255723B200FC48BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2742854ABA195C8B7622A942 /* Pods-GifteeBloodTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +694,7 @@
 		};
 		00AB1160255723B200FC48BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA96E80C0A7EEC185A9A0D27 /* Pods-GifteeBlood-GifteeBloodUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +715,7 @@
 		};
 		00AB1161255723B200FC48BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67D991C40076A515F25FC5A3 /* Pods-GifteeBlood-GifteeBloodUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
