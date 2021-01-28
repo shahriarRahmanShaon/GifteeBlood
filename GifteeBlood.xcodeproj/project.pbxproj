@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		009429AE255D2965006F313A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009429AD255D2965006F313A /* LoginView.swift */; };
 		00AB1138255723AF00FC48BF /* GifteeBloodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB1137255723AF00FC48BF /* GifteeBloodApp.swift */; };
 		00AB113A255723AF00FC48BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB1139255723AF00FC48BF /* ContentView.swift */; };
 		00AB113C255723B200FC48BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00AB113B255723B200FC48BF /* Assets.xcassets */; };
 		00AB113F255723B200FC48BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00AB113E255723B200FC48BF /* Preview Assets.xcassets */; };
 		00AB114A255723B200FC48BF /* GifteeBloodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB1149255723B200FC48BF /* GifteeBloodTests.swift */; };
 		00AB1155255723B200FC48BF /* GifteeBloodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB1154255723B200FC48BF /* GifteeBloodUITests.swift */; };
-		00DBBCD6255B9E1B0041963D /* LaunchScreenAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DBBCD5255B9E1B0041963D /* LaunchScreenAnimation.swift */; };
+		00AB425525C2E90F001471F7 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB425425C2E90F001471F7 /* ViewRouter.swift */; };
+		00AB425A25C2E9A5001471F7 /* MotherVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB425925C2E9A5001471F7 /* MotherVIew.swift */; };
+		00AB428325C31025001471F7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB428225C31025001471F7 /* LoginView.swift */; };
+		00AB428825C31085001471F7 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB428725C31085001471F7 /* SignupView.swift */; };
+		00BE2FC325BDAA7600932C85 /* loginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BE2FC225BDAA7600932C85 /* loginSignupView.swift */; };
 		00F3625C25A61B7F00F0C0B2 /* lottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3625B25A61B7F00F0C0B2 /* lottieView.swift */; };
 		00F3626125A61BED00F0C0B2 /* pressure-pulse.json in Resources */ = {isa = PBXBuildFile; fileRef = 00F3626025A61BED00F0C0B2 /* pressure-pulse.json */; };
 		00F3626A25A61D3600F0C0B2 /* animationModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3626925A61D3600F0C0B2 /* animationModelView.swift */; };
@@ -42,7 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		009429AD255D2965006F313A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		00AB1134255723AF00FC48BF /* GifteeBlood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifteeBlood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00AB1137255723AF00FC48BF /* GifteeBloodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeBloodApp.swift; sourceTree = "<group>"; };
 		00AB1139255723AF00FC48BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,7 +57,11 @@
 		00AB1150255723B200FC48BF /* GifteeBloodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifteeBloodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00AB1154255723B200FC48BF /* GifteeBloodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeBloodUITests.swift; sourceTree = "<group>"; };
 		00AB1156255723B200FC48BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00DBBCD5255B9E1B0041963D /* LaunchScreenAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenAnimation.swift; sourceTree = "<group>"; };
+		00AB425425C2E90F001471F7 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		00AB425925C2E9A5001471F7 /* MotherVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherVIew.swift; sourceTree = "<group>"; };
+		00AB428225C31025001471F7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		00AB428725C31085001471F7 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		00BE2FC225BDAA7600932C85 /* loginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginSignupView.swift; sourceTree = "<group>"; };
 		00F3625B25A61B7F00F0C0B2 /* lottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottieView.swift; sourceTree = "<group>"; };
 		00F3626025A61BED00F0C0B2 /* pressure-pulse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pressure-pulse.json"; sourceTree = "<group>"; };
 		00F3626925A61D3600F0C0B2 /* animationModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animationModelView.swift; sourceTree = "<group>"; };
@@ -125,14 +131,18 @@
 			isa = PBXGroup;
 			children = (
 				00AB1137255723AF00FC48BF /* GifteeBloodApp.swift */,
-				009429AD255D2965006F313A /* LoginView.swift */,
 				00AB1139255723AF00FC48BF /* ContentView.swift */,
+				00F5EBC525A3866E00720549 /* HomeView.swift */,
+				00BE2FC225BDAA7600932C85 /* loginSignupView.swift */,
+				00AB428225C31025001471F7 /* LoginView.swift */,
+				00AB428725C31085001471F7 /* SignupView.swift */,
+				00AB427B25C3078D001471F7 /* onboardingView */,
+				00AB428F25C31182001471F7 /* loginSignupWork */,
 				00BAD70C25A60BAA007AAA81 /* Animations */,
 				00AB113B255723B200FC48BF /* Assets.xcassets */,
 				00F3626525A61C0200F0C0B2 /* Assets */,
 				00AB1140255723B200FC48BF /* Info.plist */,
 				00AB113D255723B200FC48BF /* Preview Content */,
-				00F5EBC525A3866E00720549 /* HomeView.swift */,
 			);
 			path = GifteeBlood;
 			sourceTree = "<group>";
@@ -163,10 +173,25 @@
 			path = GifteeBloodUITests;
 			sourceTree = "<group>";
 		};
+		00AB427B25C3078D001471F7 /* onboardingView */ = {
+			isa = PBXGroup;
+			children = (
+				00AB425425C2E90F001471F7 /* ViewRouter.swift */,
+				00AB425925C2E9A5001471F7 /* MotherVIew.swift */,
+			);
+			path = onboardingView;
+			sourceTree = "<group>";
+		};
+		00AB428F25C31182001471F7 /* loginSignupWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = loginSignupWork;
+			sourceTree = "<group>";
+		};
 		00BAD70C25A60BAA007AAA81 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				00DBBCD5255B9E1B0041963D /* LaunchScreenAnimation.swift */,
 				00F3625B25A61B7F00F0C0B2 /* lottieView.swift */,
 				00F3626925A61D3600F0C0B2 /* animationModelView.swift */,
 			);
@@ -442,13 +467,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00AB425525C2E90F001471F7 /* ViewRouter.swift in Sources */,
 				00AB113A255723AF00FC48BF /* ContentView.swift in Sources */,
 				00F3626A25A61D3600F0C0B2 /* animationModelView.swift in Sources */,
-				00DBBCD6255B9E1B0041963D /* LaunchScreenAnimation.swift in Sources */,
-				009429AE255D2965006F313A /* LoginView.swift in Sources */,
 				00F3625C25A61B7F00F0C0B2 /* lottieView.swift in Sources */,
+				00AB428825C31085001471F7 /* SignupView.swift in Sources */,
+				00AB428325C31025001471F7 /* LoginView.swift in Sources */,
 				00F5EBC625A3866E00720549 /* HomeView.swift in Sources */,
+				00AB425A25C2E9A5001471F7 /* MotherVIew.swift in Sources */,
 				00AB1138255723AF00FC48BF /* GifteeBloodApp.swift in Sources */,
+				00BE2FC325BDAA7600932C85 /* loginSignupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

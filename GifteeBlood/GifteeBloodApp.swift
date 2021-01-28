@@ -6,12 +6,23 @@
 //
 
 import SwiftUI
+import IQKeyboardManagerSwift
 
 @main
 struct GifteeBloodApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MotherView().environmentObject(ViewRouter())
         }
     }
 }
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        return true
+    }
+}
+
