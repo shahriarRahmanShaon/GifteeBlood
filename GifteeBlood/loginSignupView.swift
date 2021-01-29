@@ -23,7 +23,7 @@ struct loginSignupView: View {
                         NavigationLink(destination: SignupView()){
                             RoundedRectangle(cornerRadius: 10 )
                                 .frame(width: 150, height: 300, alignment: .top)
-                                .foregroundColor(.blue)
+                                .foregroundColor(.green)
                         }.navigationBarHidden(true)
                         .edgesIgnoringSafeArea(.all)
                         .animation(.easeIn(duration: 1.0))
@@ -34,7 +34,7 @@ struct loginSignupView: View {
                                 Text("New here? Just sign up to gain access to this amazing app")
                                     .padding(20)
                                     .font(.subheadline)
-                                    .foregroundColor(.white).opacity(0.8)
+                                    .foregroundColor(.white).opacity(0.9)
                                 
                             }
                         }
@@ -62,6 +62,7 @@ struct loginSignupView: View {
                 }
                 Spacer()
                     .frame(minHeight: 10, maxHeight: 100)
+                //MARK:- social login section
                 HStack{
                     Image("google")
                     Image("facebook")
