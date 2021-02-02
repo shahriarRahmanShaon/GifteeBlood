@@ -63,11 +63,7 @@ struct loginSignupView: View {
                 Spacer()
                     .frame(minHeight: 10, maxHeight: 100)
                 //MARK:- social login section
-                HStack{
-                    Image("google")
-                    Image("facebook")
-                    Image("twitter")
-                }
+
                 Spacer(minLength: 40)
             }
         }

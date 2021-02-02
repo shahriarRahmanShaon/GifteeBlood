@@ -19,49 +19,73 @@ struct SignupView: View {
                 .font(.largeTitle)
             Spacer()
             VStack(alignment:.center, spacing: 15){
-                Spacer()
+Spacer(minLength: 2)
                 Text("SignUp")
                     .font(.largeTitle)
                     .foregroundColor(.white)
-                Spacer()
-                TextField("Name", text: $name)
-                    .padding()
-                    .overlay(RoundedRectangle(cornerRadius: 20).stroke(lineWidth: 3))
-                    .foregroundColor(name == "" ? .white : . black)
-                    .opacity(0.7)
-                
-                
-                TextField("Email", text: $email)
-                    .padding()
-                    .overlay(RoundedRectangle(cornerRadius: 20).stroke(lineWidth: 3))
-                    .foregroundColor(email == "" ? .white : . black)
-                    .opacity(0.8)
-                
-                SecureField("Password", text: $password)
-                    .padding()
-                    .overlay(RoundedRectangle(cornerRadius: 20).stroke(lineWidth: 3))
-                    .foregroundColor(password == "" ? .white : . black)
-                    .opacity(0.7)
-                
-                
+
+                ZStack(alignment: .leading) {
+                    Text("Name")
+                        .padding()
+                        .font(.subheadline)
+                        .opacity(name == "" ? 0.7 : 0.0)
+                        .foregroundColor(.white)
+                    TextField("", text: $name)
+                        .padding()
+                        .overlay(RoundedRectangle(cornerRadius: 20).stroke(lineWidth: 3))
+                        .foregroundColor(name == "" ? .white : . black)
+                        .opacity(0.8)
+
+                }
+                ZStack(alignment: .leading) {
+                    Text("Email")
+                        .padding()
+                        .font(.subheadline)
+                        .opacity(email == "" ? 0.7 : 0.0)
+                        .foregroundColor(.white)
+                    TextField("", text: $email)
+                        .padding()
+                        .overlay(RoundedRectangle(cornerRadius: 20).stroke(lineWidth: 3))
+                        .foregroundColor(email == "" ? .white : . black)
+                        .opacity(0.8)
+
+                }
+                ZStack(alignment: .leading){
+                    Text("Password")
+                        .padding()
+                        .font(.subheadline)
+                        .opacity(password == "" ? 0.7 : 0.0)
+                        .foregroundColor(.white)
+                    SecureField("", text: $password)
+                        .padding()
+                        .overlay(RoundedRectangle(cornerRadius: 20).stroke(lineWidth: 3))
+                        .foregroundColor(password == "" ? .white : . black)
+                        .opacity(0.8)
+
+                }
+             
                 Button(action: {
                     
                 }, label: {
                     Image(systemName: "arrow.forward.circle.fill")
                         .foregroundColor(.white)
-                        .font(.system(size: 70))
+                        .font(.system(size: 50))
                     
                 })
+               
                 Spacer()
-                
-            }.padding()
+            }.padding(.top)
+            .padding(.trailing)
+            .padding(.leading)
             .background(Color.green)
             .cornerRadius(20)
-            Spacer()
+           
+            Spacer(minLength: 3)
+            socialLogins()
+                .padding()
         }.padding()
         .navigationBarHidden(true)
-        
-        
+  
     }
 }
 
