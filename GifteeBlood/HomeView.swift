@@ -14,7 +14,7 @@ struct HomeView: View {
         VStack{
             Spacer()
             CustomTabs(index:self.$index )
-        }.background(Color.black.opacity(0.05)).edgesIgnoringSafeArea(.top)
+        }.background(Color.red.opacity(0.05)).edgesIgnoringSafeArea(.top)
     }
 }
 
@@ -73,9 +73,13 @@ struct CustomTabs: View {
             
             
         }
-        .padding(.leading)
-        .padding(.trailing)
+        .padding(.horizontal, 35)
+        .padding(.top, 35)
         .background(Color.white)
+        .clipShape(cShape())
+       
+        
+        
     }
 }
 
@@ -83,9 +87,13 @@ struct CustomTabs: View {
 struct cShape : Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()
-        path.move(to: CGPoint(x: 30, y: 30))
-        path.addLine(to: CGPoint(x: 30, y: 70))
-        path.addLine(to: CGPoint(x: 70, y: 30))
+        path.move(to: CGPoint(x: 0, y:35))
+        path.addLine(to: CGPoint(x: 0, y: rect.height))
+        path.addLine(to: CGPoint(x: rect.width, y: rect.height))
+        path.addLine(to: CGPoint(x: rect.width, y: 35))
+        
+        path.addArc(center: CGPoint(x: rect.width/2, y:35 ), radius: 40, startAngle: .zero, endAngle: .init(degrees: 180), clockwise: true)
+            
         return path
     }
     
@@ -93,7 +101,7 @@ struct cShape : Shape {
 }
 struct cShape_Previews: PreviewProvider {
     static var previews: some View {
-        cShape()
+        cShape().foregroundColor(.blue)
     }
 }
 
