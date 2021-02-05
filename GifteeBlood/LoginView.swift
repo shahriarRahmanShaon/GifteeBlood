@@ -34,8 +34,6 @@ struct LoginView: View {
                         .overlay(RoundedRectangle(cornerRadius: 20).stroke(lineWidth: 3))
                         .foregroundColor(email == "" ? .white : . black)
                         .opacity(0.8)
-                    
-                    
                 }
                 
                 ZStack(alignment: .leading){

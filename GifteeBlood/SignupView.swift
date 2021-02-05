@@ -19,11 +19,11 @@ struct SignupView: View {
                 .font(.largeTitle)
             Spacer()
             VStack(alignment:.center, spacing: 15){
-Spacer(minLength: 2)
+                Spacer(minLength: 2)
                 Text("SignUp")
                     .font(.largeTitle)
                     .foregroundColor(.white)
-
+                
                 ZStack(alignment: .leading) {
                     Text("Name")
                         .padding()
@@ -35,7 +35,7 @@ Spacer(minLength: 2)
                         .overlay(RoundedRectangle(cornerRadius: 20).stroke(lineWidth: 3))
                         .foregroundColor(name == "" ? .white : . black)
                         .opacity(0.8)
-
+                    
                 }
                 ZStack(alignment: .leading) {
                     Text("Email")
@@ -48,7 +48,7 @@ Spacer(minLength: 2)
                         .overlay(RoundedRectangle(cornerRadius: 20).stroke(lineWidth: 3))
                         .foregroundColor(email == "" ? .white : . black)
                         .opacity(0.8)
-
+                    
                 }
                 ZStack(alignment: .leading){
                     Text("Password")
@@ -61,9 +61,9 @@ Spacer(minLength: 2)
                         .overlay(RoundedRectangle(cornerRadius: 20).stroke(lineWidth: 3))
                         .foregroundColor(password == "" ? .white : . black)
                         .opacity(0.8)
-
+                    
                 }
-             
+                
                 Button(action: {
                     
                 }, label: {
@@ -72,20 +72,20 @@ Spacer(minLength: 2)
                         .font(.system(size: 50))
                     
                 })
-               
+                
                 Spacer()
             }.padding(.top)
             .padding(.trailing)
             .padding(.leading)
             .background(Color.green)
             .cornerRadius(20)
-           
+            
             Spacer(minLength: 3)
             socialLogins()
                 .padding()
         }.padding()
         .navigationBarHidden(true)
-  
+        
     }
 }
 

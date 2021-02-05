@@ -9,15 +9,19 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var findDonerLocation : String = ""
+    @State var indexTab = 0
     @State var index = 0
     var body: some View {
         VStack{
             Spacer()
             ZStack{
-                FindDonerView()
-            }
+                if index==0{
+                    FindDonerView( findDonerLocation: $findDonerLocation, indexTab: $indexTab)
+                }
+            }.padding(.bottom, -35)
+            .padding(.top, 30)
             CustomTabs(index:self.$index)
-            
         }.background(Color.blue.opacity(0.05)).edgesIgnoringSafeArea(.top)
         .navigationBarBackButtonHidden(true)
     }
@@ -102,6 +106,7 @@ struct cShape : Shape {
         return path
     }
 }
+
 
 
 
