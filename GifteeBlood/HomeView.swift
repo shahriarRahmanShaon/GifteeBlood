@@ -13,8 +13,13 @@ struct HomeView: View {
     var body: some View {
         VStack{
             Spacer()
-            CustomTabs(index:self.$index )
-        }.background(Color.red.opacity(0.05)).edgesIgnoringSafeArea(.top)
+            ZStack{
+                FindDonerView()
+            }
+            CustomTabs(index:self.$index)
+            
+        }.background(Color.blue.opacity(0.05)).edgesIgnoringSafeArea(.top)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
@@ -91,19 +96,13 @@ struct cShape : Shape {
         path.addLine(to: CGPoint(x: 0, y: rect.height))
         path.addLine(to: CGPoint(x: rect.width, y: rect.height))
         path.addLine(to: CGPoint(x: rect.width, y: 35))
-        
-        path.addArc(center: CGPoint(x: rect.width/2, y:35 ), radius: 40, startAngle: .zero, endAngle: .init(degrees: 180), clockwise: true)
+        path.addArc(center: CGPoint(x: rect.width/2, y:35 ), radius: 35, startAngle: .zero, endAngle: .init(degrees: 180), clockwise: true)
+ 
             
         return path
     }
-    
-    
 }
-struct cShape_Previews: PreviewProvider {
-    static var previews: some View {
-        cShape().foregroundColor(.blue)
-    }
-}
+
 
 
 

@@ -18,6 +18,7 @@
 		00AB428325C31025001471F7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB428225C31025001471F7 /* LoginView.swift */; };
 		00AB428825C31085001471F7 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB428725C31085001471F7 /* SignupView.swift */; };
 		00BE2FC325BDAA7600932C85 /* loginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BE2FC225BDAA7600932C85 /* loginSignupView.swift */; };
+		00C85E8625CCE6E4005C2750 /* FindDonerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C85E8525CCE6E4005C2750 /* FindDonerView.swift */; };
 		00D9F7C825C8326300282D1F /* socialLogins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D9F7C725C8326300282D1F /* socialLogins.swift */; };
 		00F3625C25A61B7F00F0C0B2 /* lottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3625B25A61B7F00F0C0B2 /* lottieView.swift */; };
 		00F3626125A61BED00F0C0B2 /* pressure-pulse.json in Resources */ = {isa = PBXBuildFile; fileRef = 00F3626025A61BED00F0C0B2 /* pressure-pulse.json */; };
@@ -63,6 +64,7 @@
 		00AB428225C31025001471F7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		00AB428725C31085001471F7 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		00BE2FC225BDAA7600932C85 /* loginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginSignupView.swift; sourceTree = "<group>"; };
+		00C85E8525CCE6E4005C2750 /* FindDonerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDonerView.swift; sourceTree = "<group>"; };
 		00D9F7C725C8326300282D1F /* socialLogins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = socialLogins.swift; sourceTree = "<group>"; };
 		00F3625B25A61B7F00F0C0B2 /* lottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottieView.swift; sourceTree = "<group>"; };
 		00F3626025A61BED00F0C0B2 /* pressure-pulse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pressure-pulse.json"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				00F3626525A61C0200F0C0B2 /* Assets */,
 				00AB1140255723B200FC48BF /* Info.plist */,
 				00AB113D255723B200FC48BF /* Preview Content */,
+				00C85E8525CCE6E4005C2750 /* FindDonerView.swift */,
 			);
 			path = GifteeBlood;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				00F3625C25A61B7F00F0C0B2 /* lottieView.swift in Sources */,
 				00AB428825C31085001471F7 /* SignupView.swift in Sources */,
 				00AB428325C31025001471F7 /* LoginView.swift in Sources */,
+				00C85E8625CCE6E4005C2750 /* FindDonerView.swift in Sources */,
 				00F5EBC625A3866E00720549 /* HomeView.swift in Sources */,
 				00D9F7C825C8326300282D1F /* socialLogins.swift in Sources */,
 				00AB425A25C2E9A5001471F7 /* MotherVIew.swift in Sources */,
