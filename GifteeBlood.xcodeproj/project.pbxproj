@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002AEB7925D300F00004F4C3 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002AEB7825D300F00004F4C3 /* LoadingIndicator.swift */; };
 		007FD4DB25D17FAF00358F7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 007FD4DA25D17FAF00358F7C /* GoogleService-Info.plist */; };
 		00AB1138255723AF00FC48BF /* GifteeBloodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB1137255723AF00FC48BF /* GifteeBloodApp.swift */; };
 		00AB113A255723AF00FC48BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB1139255723AF00FC48BF /* ContentView.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		002AEB7825D300F00004F4C3 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		007FD4DA25D17FAF00358F7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00AB1134255723AF00FC48BF /* GifteeBlood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifteeBlood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00AB1137255723AF00FC48BF /* GifteeBloodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeBloodApp.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			children = (
 				00F3625B25A61B7F00F0C0B2 /* lottieView.swift */,
 				00F3626925A61D3600F0C0B2 /* animationModelView.swift */,
+				002AEB7825D300F00004F4C3 /* LoadingIndicator.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				00F3626A25A61D3600F0C0B2 /* animationModelView.swift in Sources */,
 				00F3625C25A61B7F00F0C0B2 /* lottieView.swift in Sources */,
 				00AB428825C31085001471F7 /* SignupView.swift in Sources */,
+				002AEB7925D300F00004F4C3 /* LoadingIndicator.swift in Sources */,
 				00AB428325C31025001471F7 /* LoginView.swift in Sources */,
 				00C85E8625CCE6E4005C2750 /* FindDonerView.swift in Sources */,
 				00F5EBC625A3866E00720549 /* HomeView.swift in Sources */,

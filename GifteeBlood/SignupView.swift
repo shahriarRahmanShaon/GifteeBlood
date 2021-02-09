@@ -9,10 +9,11 @@ import SwiftUI
 import Firebase
 
 struct SignupView: View {
-    @State var email : String = ""
-    @State var password : String = ""
-    @State var name : String = ""
-    @State var isLinkActive : Bool = false
+    @State var shouldAnimate = false
+    @State var email = ""
+    @State var password = ""
+    @State var name = ""
+    @State var isLinkActive = false
     var body: some View {
         VStack {
             Image(systemName: "house")
@@ -66,29 +67,26 @@ struct SignupView: View {
                     
                 }
                 //MARK:- signup button management
-               NavigationLink(
-                destination: HomeView(),
-                isActive: $isLinkActive,
-                label: {
-                    Button(action: {
-                        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-                            if error != nil {
-                                print(error?.localizedDescription as Any)
+                NavigationLink(
+                    destination: HomeView(),
+                    isActive: $isLinkActive,
+                    label: {
+                        Button(action: {
+                            Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+                                if error != nil {
+                                    print(error?.localizedDescription as Any)
+                                }else{
                                 
-                            }else{
-                                isLinkActive = true
+                                    isLinkActive = true
+                                }
                             }
-                        }
-                    }, label: {
-                        Image(systemName: "arrow.forward.circle.fill")
-                            .foregroundColor(.white)
-                            .font(.system(size: 50))
-                        
+                        }, label: {
+                            Image(systemName: "arrow.forward.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.system(size: 50))
+                            
+                        })
                     })
-                })
-                
-      
-                
                 Spacer()
             }.padding(.top)
             .padding(.trailing)
@@ -103,10 +101,16 @@ struct SignupView: View {
         .navigationBarHidden(true)
         
     }
+    
+
 }
+
+
 
 struct SignupView_Previews: PreviewProvider {
     static var previews: some View {
         SignupView()
     }
 }
+
+
