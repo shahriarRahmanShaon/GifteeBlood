@@ -16,7 +16,10 @@ target 'GifteeBlood' do
   target 'GifteeBloodUITests' do
     # Pods for testing
   end
+
 pod 'IQKeyboardManagerSwift'
 pod 'lottie-ios'
+pod 'Firebase/Auth'
+
 
 end

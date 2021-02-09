@@ -7,6 +7,7 @@
 
 import SwiftUI
 import IQKeyboardManagerSwift
+import Firebase
 
 @main
 struct GifteeBloodApp: App {
@@ -20,6 +21,7 @@ struct GifteeBloodApp: App {
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         return true

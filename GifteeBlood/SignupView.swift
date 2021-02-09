@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct SignupView: View {
     @State var email : String = ""
     @State var password : String = ""
     @State var name : String = ""
+    @State var isLinkActive : Bool = false
     var body: some View {
         VStack {
             Image(systemName: "house")
@@ -63,15 +65,29 @@ struct SignupView: View {
                         .opacity(0.8)
                     
                 }
-                
-                Button(action: {
-                    
-                }, label: {
-                    Image(systemName: "arrow.forward.circle.fill")
-                        .foregroundColor(.white)
-                        .font(.system(size: 50))
-                    
+                //MARK:- signup button management
+               NavigationLink(
+                destination: HomeView(),
+                isActive: $isLinkActive,
+                label: {
+                    Button(action: {
+                        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+                            if error != nil {
+                                print(error?.localizedDescription as Any)
+                                
+                            }else{
+                                isLinkActive = true
+                            }
+                        }
+                    }, label: {
+                        Image(systemName: "arrow.forward.circle.fill")
+                            .foregroundColor(.white)
+                            .font(.system(size: 50))
+                        
+                    })
                 })
+                
+      
                 
                 Spacer()
             }.padding(.top)

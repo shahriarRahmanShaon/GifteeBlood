@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginView: View {
     @State var email : String = ""
     @State var password : String = ""
+    @State var isLinkActive : Bool = false
     var body: some View {
         VStack {
             Image(systemName: "house")
@@ -63,10 +65,24 @@ struct LoginView: View {
                 
                 NavigationLink(
                     destination: HomeView(),
+                    isActive: $isLinkActive,
                     label: {
-                        Image(systemName: "arrow.forward.circle.fill")
-                            .font(.system(size: 50))
-                            .foregroundColor(.white)
+                        Button(action: {
+                            Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+                                if  error != nil {
+                                    print(error?.localizedDescription)
+                                    
+                                }else{
+                                    isLinkActive = true
+                                }
+                            }
+                               
+                        }, label: {
+                            Image(systemName: "arrow.forward.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.system(size: 50))
+                            
+                        })
                     })
                 
             }.padding()
