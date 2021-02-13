@@ -4,12 +4,12 @@
 //
 //  Created by sergio shaon on 28/1/21.
 //
-
+import FirebaseDatabase
 import SwiftUI
 import Firebase
 
 struct SignupView: View {
-    @State var shouldAnimate = false
+    var ref : DatabaseReference = Database.database().reference()
     @State var email = ""
     @State var password = ""
     @State var name = ""
@@ -76,7 +76,10 @@ struct SignupView: View {
                                 if error != nil {
                                     print(error?.localizedDescription as Any)
                                 }else{
-                                
+                                    let user = Auth.auth().currentUser
+                                    let userData = ["userName": name,
+                                                    "email": email]
+                                    ref.child("UserDataCollection").child(user!.uid).setValue(userData)
                                     isLinkActive = true
                                 }
                             }
@@ -103,14 +106,11 @@ struct SignupView: View {
     }
     
 
-}
-
-
-
-struct SignupView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignupView()
+    
+    struct SignupView_Previews: PreviewProvider {
+        static var previews: some View {
+            SignupView()
+        }
     }
+    
 }
-
-

@@ -70,7 +70,7 @@ struct LoginView: View {
                         Button(action: {
                             Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
                                 if  error != nil {
-                                    print(error?.localizedDescription)
+                                    print(error?.localizedDescription as Any)
                                     
                                 }else{
                                     isLinkActive = true

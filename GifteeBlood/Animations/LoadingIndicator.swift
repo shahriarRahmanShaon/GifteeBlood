@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct LoadingIndicator: View {
+    
     var body: some View {
-        ProgressView()
-            .scaleEffect(5)
-            .shadow(color: Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)),
+        ZStack {
+            Color(.systemTeal)
+                .edgesIgnoringSafeArea(.all)
+            ProgressView()
+                .scaleEffect(5)
+                .shadow(color: Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)),
                     radius: 4.0, x: 1.0, y: 2.0)
+        }
             
     }
 }

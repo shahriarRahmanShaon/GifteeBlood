@@ -113,9 +113,9 @@ struct FindDonerView: View {
         
     }
     
-//    struct FindDonerView_Previews: PreviewProvider {
-//        static var previews: some View {
-//            FindDonerView()
-//        }
-//    }
+    struct FindDonerView_Previews: PreviewProvider {
+        static var previews: some View {
+            FindDonerView(findDonerLocation: .constant(""), indexTab: .constant(5))
+        }
+    }
 }

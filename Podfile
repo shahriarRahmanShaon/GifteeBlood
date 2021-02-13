@@ -20,6 +20,7 @@ target 'GifteeBlood' do
 pod 'IQKeyboardManagerSwift'
 pod 'lottie-ios'
 pod 'Firebase/Auth'
+pod 'Firebase/Database'
 
 
 end
