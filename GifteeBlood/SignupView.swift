@@ -78,7 +78,8 @@ struct SignupView: View {
                                 }else{
                                     let user = Auth.auth().currentUser
                                     let userData = ["userName": name,
-                                                    "email": email]
+                                                    "email": email,
+                                                    "UserID": user?.uid]
                                     ref.child("UserDataCollection").child(user!.uid).setValue(userData)
                                     isLinkActive = true
                                 }
@@ -105,7 +106,7 @@ struct SignupView: View {
         
     }
     
-
+    
     
     struct SignupView_Previews: PreviewProvider {
         static var previews: some View {

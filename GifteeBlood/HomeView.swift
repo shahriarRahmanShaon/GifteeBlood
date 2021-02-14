@@ -13,16 +13,22 @@ struct HomeView: View {
     @State var indexTab = 0
     @State var index = 0
     var body: some View {
-        VStack{
-            Spacer()
-            ZStack{
-                if index==0{
-                    FindDonerView( findDonerLocation: $findDonerLocation, indexTab: $indexTab)
-                }
-            }.padding(.bottom, -35)
-            .padding(.top, 30)
-            CustomTabs(index:self.$index)
-        }.background(Color.blue.opacity(0.05)).edgesIgnoringSafeArea(.top)
+        NavigationView {
+            VStack{
+                Spacer()
+                ZStack{
+                    if index==0{
+                        FindDonerView( findDonerLocation: $findDonerLocation, indexTab: $indexTab)
+                    }else if index==3{
+                        profileVIew()
+                    }
+                }.padding(.bottom, -35)
+                .padding(.top, 30)
+                CustomTabs(index:self.$index)
+            }.background(Color.blue.opacity(0.05))
+            .edgesIgnoringSafeArea(.top)
+            
+        }  .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
 }

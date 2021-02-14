@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00094DA225D803C600DE0B46 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00094DA125D803C600DE0B46 /* FirebaseModel.swift */; };
-		00094DA725D8077200DE0B46 /* firebaseDatabaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00094DA625D8077200DE0B46 /* firebaseDatabaseViewModel.swift */; };
 		002AEB7925D300F00004F4C3 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002AEB7825D300F00004F4C3 /* LoadingIndicator.swift */; };
+		004AC52525D8E50100602CBB /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004AC52425D8E50100602CBB /* Strings.swift */; };
 		0059D46425D6B54C006ED638 /* profileVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059D46325D6B54C006ED638 /* profileVIew.swift */; };
 		007FD4DB25D17FAF00358F7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 007FD4DA25D17FAF00358F7C /* GoogleService-Info.plist */; };
 		00AB1138255723AF00FC48BF /* GifteeBloodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB1137255723AF00FC48BF /* GifteeBloodApp.swift */; };
@@ -52,9 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00094DA125D803C600DE0B46 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
-		00094DA625D8077200DE0B46 /* firebaseDatabaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseDatabaseViewModel.swift; sourceTree = "<group>"; };
 		002AEB7825D300F00004F4C3 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		004AC52425D8E50100602CBB /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		0059D46325D6B54C006ED638 /* profileVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileVIew.swift; sourceTree = "<group>"; };
 		007FD4DA25D17FAF00358F7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00AB1134255723AF00FC48BF /* GifteeBlood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifteeBlood.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +149,8 @@
 				00AB428225C31025001471F7 /* LoginView.swift */,
 				00AB428725C31085001471F7 /* SignupView.swift */,
 				00C85E8525CCE6E4005C2750 /* FindDonerView.swift */,
+				0059D46325D6B54C006ED638 /* profileVIew.swift */,
+				004AC52425D8E50100602CBB /* Strings.swift */,
 				00D9F7C725C8326300282D1F /* socialLogins.swift */,
 				00AB427B25C3078D001471F7 /* onboardingView */,
 				00AB428F25C31182001471F7 /* loginSignupWork */,
@@ -160,9 +160,6 @@
 				00AB1140255723B200FC48BF /* Info.plist */,
 				007FD4DA25D17FAF00358F7C /* GoogleService-Info.plist */,
 				00AB113D255723B200FC48BF /* Preview Content */,
-				0059D46325D6B54C006ED638 /* profileVIew.swift */,
-				00094DA125D803C600DE0B46 /* FirebaseModel.swift */,
-				00094DA625D8077200DE0B46 /* firebaseDatabaseViewModel.swift */,
 			);
 			path = GifteeBlood;
 			sourceTree = "<group>";
@@ -496,12 +493,11 @@
 				00F3625C25A61B7F00F0C0B2 /* lottieView.swift in Sources */,
 				00AB428825C31085001471F7 /* SignupView.swift in Sources */,
 				002AEB7925D300F00004F4C3 /* LoadingIndicator.swift in Sources */,
+				004AC52525D8E50100602CBB /* Strings.swift in Sources */,
 				00AB428325C31025001471F7 /* LoginView.swift in Sources */,
 				00C85E8625CCE6E4005C2750 /* FindDonerView.swift in Sources */,
-				00094DA225D803C600DE0B46 /* FirebaseModel.swift in Sources */,
 				00F5EBC625A3866E00720549 /* HomeView.swift in Sources */,
 				00D9F7C825C8326300282D1F /* socialLogins.swift in Sources */,
-				00094DA725D8077200DE0B46 /* firebaseDatabaseViewModel.swift in Sources */,
 				00AB425A25C2E9A5001471F7 /* MotherVIew.swift in Sources */,
 				00AB1138255723AF00FC48BF /* GifteeBloodApp.swift in Sources */,
 				00BE2FC325BDAA7600932C85 /* loginSignupView.swift in Sources */,

@@ -6,15 +6,22 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 import IQKeyboardManagerSwift
 import Firebase
+
 
 @main
 struct GifteeBloodApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            MotherView().environmentObject(ViewRouter())
+            if Auth.auth().currentUser != nil {
+                HomeView()
+            }else{
+                MotherView().environmentObject(ViewRouter())
+            }
+           
         }
     }
 }

@@ -67,6 +67,8 @@ struct loginSignupView: View {
                 Spacer(minLength: 40)
             }
         }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
