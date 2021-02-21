@@ -10,10 +10,14 @@ import FirebaseAuth
 import Firebase
 
 struct profileVIew: View {
-    
+    @State var isPresented :Bool = false
+    @Binding var donateMode : Bool
     @State var ViewActive : Bool = false
     var body: some View {
         
+        ZStack {
+            (Color(#colorLiteral(red: 0.9476088881, green: 0.9720847011, blue: 1, alpha: 1)))
+                .edgesIgnoringSafeArea(.all)
             VStack(alignment:.leading) {
                 Text("Profile")
                     .font(.system(size: 30))
@@ -35,18 +39,20 @@ struct profileVIew: View {
                     ScrollView {
                         Spacer()
                         Spacer()
-                        profileComponent(ViewActive: $ViewActive)
+                        profileComponent( isPresented: $isPresented, donateMode: $donateMode, ViewActive: $ViewActive)
                     }.padding(10)
                 }
-            
-            }.padding()
+                
+            }
+            .padding()
         }
-        
-  
+    }
+    
+    
     
     struct profileVIew_Previews: PreviewProvider {
         static var previews: some View {
-            profileVIew()
+            profileVIew( donateMode: .constant(false))
         }
     }
     
@@ -95,35 +101,65 @@ struct lazyVstackHstack: View {
 }
 
 struct profileComponent: View {
+    @Binding var isPresented :Bool
+    @Binding var donateMode : Bool
     @Binding var ViewActive : Bool
+    
     var body: some View {
         LazyVStack(alignment : .leading, spacing: 40){
-            lazyVstackHstack(imageName: Strings.profileLazyVstackComponents.imagename[0], text: Strings.profileLazyVstackComponents.texts[0])
+            Toggle(isOn:$donateMode , label: {
+                lazyVstackHstack(imageName: Strings.profileLazyVstackComponents.imagename[0], text: Strings.profileLazyVstackComponents.texts[0])
+            })
+            .onChange(of: donateMode, perform: { value in
+                if donateMode{
+                    isPresented = true
+                }else{
+                    isPresented = false
+                }
+            })
+            .toggleStyle(SwitchToggleStyle(tint: Color(#colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1))))
+            .sheet(isPresented: $isPresented,onDismiss: {
+                
+            }, content: {
+                IWantToDonateView()
+            })
+            
+            
             lazyVstackHstack(imageName: Strings.profileLazyVstackComponents.imagename[1], text: Strings.profileLazyVstackComponents.texts[1])
             lazyVstackHstack(imageName: Strings.profileLazyVstackComponents.imagename[2], text: Strings.profileLazyVstackComponents.texts[2])
             lazyVstackHstack(imageName: Strings.profileLazyVstackComponents.imagename[3], text: Strings.profileLazyVstackComponents.texts[3])
             lazyVstackHstack(imageName: Strings.profileLazyVstackComponents.imagename[4], text: Strings.profileLazyVstackComponents.texts[4])
+            
+            
             //MARK:- logout button management
-           
-                NavigationLink(
-                    destination: loginSignupView(),
-                    isActive: $ViewActive,
-                    label: {
-                        Button(action: {
-                            do {
-                                try Auth.auth().signOut()
-                                self.ViewActive = true
-                                print("done logout")
-                            }
-                            catch { print("already logged out") }
-                            
-                        }, label: {
-                            lazyVstackHstack(imageName: Strings.profileLazyVstackComponents.imagename[5], text: Strings.profileLazyVstackComponents.texts[5])
-                                .foregroundColor(.black)
-                        })
+            
+            NavigationLink(
+                destination: loginSignupView(),
+                isActive: $ViewActive,
+                label: {
+                    Button(action: {
+                        do {
+                            try Auth.auth().signOut()
+                            self.ViewActive = true
+                            print("done logout")
+                        }
+                        catch { print("already logged out") }
+                        
+                    }, label: {
+                        lazyVstackHstack(imageName: Strings.profileLazyVstackComponents.imagename[5], text: Strings.profileLazyVstackComponents.texts[5])
+                            .foregroundColor(.black)
+                        
                     })
-
+                })
             
         }
+        
     }
+    func isPresentedValue(donateMode: Bool, isPresented: Bool ) -> Bool {
+        if donateMode {
+            return isPresented == true
+        }
+        return false
+    }
+  
 }

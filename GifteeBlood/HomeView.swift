@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var donateMode : Bool = false
+    
     @State var findDonerLocation : String = ""
     @State var indexTab = 0
     @State var index = 0
@@ -20,8 +22,9 @@ struct HomeView: View {
                     if index==0{
                         FindDonerView( findDonerLocation: $findDonerLocation, indexTab: $indexTab)
                     }else if index==3{
-                        profileVIew()
+                        profileVIew( donateMode: $donateMode)
                     }
+
                 }.padding(.bottom, -35)
                 .padding(.top, 30)
                 CustomTabs(index:self.$index)
@@ -49,7 +52,7 @@ struct CustomTabs: View {
             }, label: {
                 ZStack {
                     Image(systemName: "doc.text.magnifyingglass")
-                        .font(.system(size: 20))
+                        .font(.system(size: 30))
                 }
             }).foregroundColor(Color.blue.opacity(index == 0 ? 1 : 0.4))
             
@@ -58,7 +61,7 @@ struct CustomTabs: View {
                 self.index = 1
             }, label: {
                 Image(systemName: "text.badge.plus")
-                    .font(.system(size: 20))
+                    .font(.system(size: 30))
             }).foregroundColor(Color.blue.opacity(index == 1 ? 1 : 0.4))
             Spacer()
             
@@ -67,7 +70,7 @@ struct CustomTabs: View {
             }, label: {
                 Image(systemName: "plus.circle.fill")
                     .foregroundColor(Color(#colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)))
-                    .font(.system(size: 60))
+                    .font(.system(size: 50))
             }).offset(y : -30)
             
             Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
@@ -75,7 +78,7 @@ struct CustomTabs: View {
                 self.index = 2
             }, label: {
                 Image(systemName: "clock.arrow.circlepath")
-                    .font(.system(size: 20))
+                    .font(.system(size: 30))
             }).foregroundColor(Color.blue.opacity(index == 2 ? 1 : 0.4))
             
             Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
@@ -83,7 +86,7 @@ struct CustomTabs: View {
                 self.index = 3
             }, label: {
                 Image(systemName: "person")
-                    .font(.system(size: 20))
+                    .font(.system(size: 30))
             }).foregroundColor(Color.blue.opacity(index == 3 ? 1 : 0.4))
             
             
